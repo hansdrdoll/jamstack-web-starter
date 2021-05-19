@@ -3,8 +3,78 @@ layout: base.njk
 title: Minimal boilerplate for new projects built with Eleventy, Tailwind and PostCSS
 ---
 
-<main id="main" class="px-4 max-w-md mx-auto text-center">
-    <img src="/static/icon.svg" alt="Rocket icon" class="w-12 mx-auto my-4 rocket">
+<main id="main" class="text-center">
+    <section id="header" class="flex flex-col h-screen">
+        <div class="w-full h-1/3 bg-green-300 flex flex-col justify-end">
+            <h1 class="bg-red-200">Jeremy and Hans</h1>
+        </div>
+        <div class="h-8 bg-gray-100 divide-x divide-solid divide-gray-800 flex">
+            <div class="flex-1"></div>
+            <div class="flex-1"></div>
+        </div>
+        <div>
+            <p>09 October</p>
+        </div>
+        <div class="flex flex-grow bg-yellow-100 divide-x divide-solid divide-gray-800">
+            <div class="bg-gray-200 flex-1 flex justify-end p-2">
+                <p>2020</p>
+            </div>
+            <div class="bg-pink-200 flex-1 flex justify-start p-2">
+                <p class="line-through">2021</p>
+            </div>
+        </div>
+
+        <div class="w-full">
+            <picture class="object-cover">
+                <source
+                    media="(max-width: 767px)"
+                    sizes="(max-width: 1534px) 100vw, 1534px"
+                    srcset="
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_200,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 200w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_584,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 584w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_943,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 943w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_1049,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1049w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_853,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 853w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_1534,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1534w">
+                <source
+                    media="(min-width: 768px) and (max-width: 991px)"
+                    sizes="(max-width: 1982px) 100vw, 1982px"
+                    srcset="
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_768,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 768w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1453,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1453w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1687,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1687w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1903,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1903w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1688,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1688w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1653,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1653w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1801,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1801w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1800,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1800w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1962,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1962w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1982,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1982w">
+                <img
+                    sizes="(max-width: 3000px) 100vw, 3000px"
+                    srcset="
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_992,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 992w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_1214,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1214w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_1409,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1409w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_1683,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1683w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_1832,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1832w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2045,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2045w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2206,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2206w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2390,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2390w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2465,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2465w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2138,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2138w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2397,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2397w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2348,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2348w,
+                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_3000,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 3000w"
+                    src="https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_3000,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy"
+                    alt="">
+            </picture>
+
+        </div>
+
+    </section>
+</section>
+{# <img src="/static/icon.svg" alt="Rocket icon" class="w-12 mx-auto my-4 rocket">
     <h1 class="font-bold text-xl mb-2">JAMStack Web Starter <span class="font-light text-gray-500">v{{ pkg.version }}</span></h1>
     <p>Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS</p>
 
@@ -22,5 +92,5 @@ title: Minimal boilerplate for new projects built with Eleventy, Tailwind and Po
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 mr-1"><path class="fill-current text-gray-100" d="M32 5H4C1.791 5 0 6.791 0 9v18c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V9c0-2.209-1.791-4-4-4z"/><path class="fill-current text-ws-blue-500" d="M13 18S0 8.586 0 8.895v18.21C0 27.414 13 18 13 18zm5 3S3.697 31 4.07 31h27.859C32.303 31 18 21 18 21zm5-3s13 9.414 13 9.105V8.895C36 8.586 23 18 23 18zm-5-3S3.697 5 4.07 5h27.859C32.303 5 18 15 18 15z"/></svg>
             <span>Proudly crafted in Scotland by <a href="https://www.chriscollins.me">Chris Collins</a></span></p>
         <p>Go and build something great! 🥳</p>
-    </footer>
+    </footer> #}
 </main>
