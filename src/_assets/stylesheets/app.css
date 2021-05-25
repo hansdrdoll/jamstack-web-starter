@@ -1,5 +1,24 @@
 @import "utils/_tailwind.css";
 
 /* purgecss start ignore */
-
+@layer utilities {
+	.scroll-snap-none {
+		scroll-snap-type: none;
+	}
+	.scroll-snap-mandate {
+		scroll-snap-type: both mandatory;
+	}
+	.scroll-snap-y-top {
+		scroll-snap-type: y proximity;
+		scroll-snap-align: top;
+	}
+	.scroll-snap-y-center {
+		scroll-snap-type: y proximity;
+		scroll-snap-align: center;
+	}
+	.scroll-snap-y-end {
+		scroll-snap-type: y proximity;
+		scroll-snap-align: end;
+	}
+}
 /* purgecss end ignore */

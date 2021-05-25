@@ -2,7 +2,7 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				"ws-blue": {
+				jh: {
 					navy: "#062f40",
 					caribbean: "#368196",
 					ice: "#dfebef",
