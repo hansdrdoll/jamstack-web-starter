@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "Web Starter",
+  "title": "Jeremy & Hans",
   "description": "Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS",
   "url": "https://webstarter.chriscollins.me",
   "author": "Chris Collins",

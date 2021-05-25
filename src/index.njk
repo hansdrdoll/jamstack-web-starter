@@ -5,26 +5,44 @@ title: Minimal boilerplate for new projects built with Eleventy, Tailwind and Po
 
 <main id="main" class="text-center">
     <section id="header" class="flex flex-col h-screen">
-        <div class="w-full h-1/3 bg-green-300 flex flex-col justify-end">
-            <h1 class="bg-red-200">Jeremy and Hans</h1>
-        </div>
-        <div class="h-8 bg-gray-100 divide-x divide-solid divide-gray-800 flex">
-            <div class="flex-1"></div>
-            <div class="flex-1"></div>
-        </div>
-        <div>
-            <p>09 October</p>
-        </div>
-        <div class="flex flex-grow bg-yellow-100 divide-x divide-solid divide-gray-800">
-            <div class="bg-gray-200 flex-1 flex justify-end p-2">
-                <p>2020</p>
+        {# top #}
+        <div class="flex h-full flex-col">
+            <div class="flex-grow h-full">
+                <div class="h-full"></div>
             </div>
-            <div class="bg-pink-200 flex-1 flex justify-start p-2">
-                <p class="line-through">2021</p>
+            <div class="w-full h-full flex flex-col place-content-center">
+                <div class="h-full">
+                    <div class="w-full flex flex-col justify-end">
+                        <h1 class="text-2xl md:text-3xl font-subhead tracking-widest subpixel-antialiased uppercase">Jeremy and Hans</h1>
+                    </div>
+                    <div class="h-1/2 md:h-1/3 xl:h-1/2 divide-x divide-solid divide-gray-800 flex">
+                        <div class="flex-1"></div>
+                        <div class="flex-1"></div>
+                    </div>
+                    <div>
+                        <p class="font-headline tracking-wide leading-none text-3xl md:text-5xl">09 October</p>
+                    </div>
+                    <div class="flex h-full flex-grow divide-x divide-solid divide-gray-800 font-headline leading-none text-3xl md:text-5xl">
+                        <div class="flex-1 flex justify-end px-2 h-full">
+                            <p>2020</p>
+                        </div>
+                        <div class="flex-1 flex justify-start px-2 h-full">
+                            <p class="line-through">2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-grow h-full">
+                <div class="h-full flex divide-x divide-solid divide-gray-800">
+                    <div class="flex-1 flex justify-end p-2"></div>
+                    <div class="flex-1 flex justify-start p-2"></div>
+                </div>
             </div>
         </div>
-        <div class="w-full flex justify-center">
-            <picture class="mx-auto object-cover 2xl:flex 2xl:flex-initial 2xl:flex-col 2xl:items-center 2xl:max-w-screen-2xl bg-red-200">
+        {# end top #}
+        {# hero image #}
+        <div class="w-full flex justify-center 2xl:bg-hero-1 2xl:bg-cover">
+            <picture class="mx-auto object-cover 2xl:flex 2xl:flex-initial 2xl:flex-col 2xl:items-center 2xl:max-w-screen-2xl 2xl:shadow-xl">
                 <source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
                 {# 2xl #}
                 <source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
@@ -40,54 +58,10 @@ title: Minimal boilerplate for new projects built with Eleventy, Tailwind and Po
                 <source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1621867913/wedding_v2/0224_enc5bm">
                 <img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
             </picture>
-
-            {# <picture class="object-cover">
-                <source
-                    media="(max-width: 767px)"
-                    sizes="(max-width: 1534px) 100vw, 1534px"
-                    srcset="
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_200,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 200w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_584,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 584w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_943,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 943w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_1049,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1049w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_853,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 853w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_9:16,c_fill,w_1534,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1534w">
-                <source
-                    media="(min-width: 768px) and (max-width: 991px)"
-                    sizes="(max-width: 1982px) 100vw, 1982px"
-                    srcset="
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_768,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 768w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1453,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1453w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1687,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1687w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1903,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1903w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1688,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1688w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1653,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1653w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1801,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1801w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1800,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1800w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1962,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1962w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/ar_5:3,c_fill,w_1982,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1982w">
-                <img
-                    sizes="(max-width: 3000px) 100vw, 3000px"
-                    srcset="
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_992,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 992w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_1214,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1214w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_1409,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1409w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_1683,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1683w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_1832,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 1832w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2045,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2045w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2206,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2206w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2390,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2390w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2465,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2465w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2138,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2138w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2397,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2397w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_2348,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 2348w,
-                    https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_3000,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy 3000w"
-                    src="https://res.cloudinary.com/dsq8eoc9l/image/upload/c_scale,w_3000,f_auto,q_auto:best/main-branch/hero1-wide_mldxxy"
-                    alt="">
-            </picture> #}
-
         </div>
-
+        {# hero image #}
+    </section>
+    <section class="h-screen">
         {# Breakpoint Indicator #}
         <div class="flex items-center m-2 fixed bottom-0 right-0 border border-gray-400 rounded p-2 bg-gray-300 text-pink-600 text-sm">
             <svg class="h-6 w-auto inline" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,5 +83,4 @@ title: Minimal boilerplate for new projects built with Eleventy, Tailwind and Po
         </div>
         {# End Breakpoint Indicator #}
     </section>
-</section>
 </main>
