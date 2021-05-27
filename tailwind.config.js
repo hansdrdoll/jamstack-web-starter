@@ -27,6 +27,8 @@ module.exports = {
 			backgroundImage: (theme) => ({
 				"hero-1":
 					"url('https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto:eco,c_lfill,g_center,e_blur:2000/v1621867913/wedding_v2/0224_enc5bm')",
+				"hero-2":
+					"url('https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto:eco,c_lfill,g_center,e_blur:2000/v1621867913/wedding_v2/0224_enc5bm')",
 			}),
 		},
 	},

@@ -1,11 +1,11 @@
 module.exports = {
-  "title": "Jeremy & Hans",
-  "description": "Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS",
-  "url": "https://webstarter.chriscollins.me",
-  "author": "Chris Collins",
-  "meta_data": {
-    "twitter": "@scottishstoater",
-    "default_social_image": "/static/default_social_image.jpg"
-  },
-  "env": process.env.ELEVENTY_ENV === 'production'
-}
+	title: "Jeremy & Hans",
+	description: "",
+	url: "https://jeremyandhans.com",
+	// "author": "Chris Collins",
+	meta_data: {
+		// "twitter": "@scottishstoater",
+		// "default_social_image": "/static/default_social_image.jpg"
+	},
+	env: process.env.ELEVENTY_ENV === "production",
+};

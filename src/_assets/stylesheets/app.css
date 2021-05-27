@@ -21,4 +21,51 @@
 		scroll-snap-align: end;
 	}
 }
+
+.full-width-div {
+	@apply flex justify-center w-full shadow;
+}
+@screen 2xl {
+	.full-width-div {
+		@apply bg-cover;
+	}
+}
+
+.full-width-picture {
+	@apply object-cover mx-auto;
+}
+@screen 2xl {
+	.full-width-picture {
+		@apply flex flex-initial flex-col items-center max-w-screen-2xl;
+	}
+}
+
+.section-std-div {
+	@apply grid gap-10 px-10 py-10 text-left max-w-screen-2xl place-content-center;
+}
+
+@screen sm {
+	.section-std-div {
+		@apply px-20;
+	}
+}
+@screen md {
+	.section-std-div {
+		@apply grid-cols-2 px-32;
+	}
+}
+@screen lg {
+	.section-std-div {
+		@apply gap-x-20 px-40;
+	}
+}
+
+.text-section-h3 {
+	@apply max-w-xl my-auto text-4xl leading-snug font-headline text-jh-navy;
+}
+
+.text-section-p {
+	@apply max-w-xl font-bodycopy leading-relaxed;
+}
+
 /* purgecss end ignore */
