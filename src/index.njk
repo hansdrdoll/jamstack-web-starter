@@ -4,130 +4,143 @@ title: Jeremy and Hans
 ---
 
 <main id="main" class="text-center">
-    <section id="header" class="flex flex-col h-screen scroll-snap-y-top">
-        {# top #}
-        <div class="flex flex-col flex-grow">
-            <div class="flex-grow">
-                <div class=""></div>
-            </div>
-            <div class="flex flex-col flex-none w-full h-1/3 ">
-                <div class="flex flex-col justify-end w-full">
-                    <h1 class="text-2xl subpixel-antialiased tracking-widest uppercase md:text-3xl font-subhead">Jeremy and Hans</h1>
-                </div>
-                <div class="flex flex-grow divide-x divide-gray-800 h-1/2 md:h-1/3 xl:h-1/2 divide-solid">
-                    <div class="flex-grow"></div>
-                    <div class="flex-grow"></div>
-                </div>
-                <div>
-                    <p class="text-3xl leading-none tracking-wide font-headline md:text-5xl">09 October</p>
-                </div>
-                <div class="flex text-3xl leading-none divide-x divide-gray-800 divide-solid font-headline md:text-5xl">
-                    <div class="flex justify-end flex-1 px-2">
-                        <p>2020</p>
-                    </div>
-                    <div class="flex justify-start flex-1 px-2">
-                        <p class="line-through">2021</p>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-grow">
-                <div class="flex flex-grow divide-x divide-gray-800 divide divide-solid">
-                    <div class="flex-grow"></div>
-                    <div class="flex-grow"></div>
-                </div>
-            </div>
-        </div>
-        {# end top #}
-        {# hero image #}
-        <div class="full-width-div 2xl:bg-hero-1">
-            <picture class="full-width-picture">
-                <source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
-                {# 2xl #}
-                <source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
-                {# xl #}
-                <source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
-                {# lg #}
-                <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
-                {# md #}
-                <source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
-                {# sm #}
-                <source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1621867913/wedding_v2/0224_enc5bm">
-                {# extra sm #}
-                <source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1621867913/wedding_v2/0224_enc5bm">
-                <img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
-            </picture>
-        </div>
-        {# hero image #}
-    </section>
-    <section class="flex justify-center bg-jh-sea-foam scroll-snap-y-top">
-        <div class="section-std-div">
-            <h3 class="inline text-section-h3 sm:hidden md:inline xl:hidden md:order-1">Postponing our reception&hellip; for a great reason!</h3>
-            <h3 class="hidden text-section-h3 sm:inline md:hidden xl:inline md:order-1">Postponing our reception&hellip;<br> for a great reason!</h3>
-            <p class="text-lg text-section-p md:order-3">After careful thought, we’ve decided to postpone our wedding reception and instead are putting our efforts towards building our family through surrogacy.</p>
-            <p class="text-section-p md:order-2">We’ll definitely have the reception at some point in the future, namely when the world has learned to responsibly live with covid so that our family and friends both in the US and overseas can confidently travel in to celebrate.</p>
-            <p class="text-section-p md:order-4">In the meantime, we hope to share good news on our family building progress soon. Until then, we wanted to share more about our small wedding ceremony from 2020.</p>
-        </div>
-    </section>
-    <section class="flex justify-center bg-jh-ice scroll-snap-y-top">
-        <div class="section-std-div">
-            <div class="">
-                <h3 class="tracking-wider uppercase font-subhead">It's not necessary, but&hellip;</h3>
-                <h3 class="mb-4 text-4xl leading-relaxed font-headline">Registry</h3>
-                <p class="max-w-xl text-lg leading-relaxed font-bodycopy">So many of you have been so kind to ask whether we’re registered. Everyone probably knows that we have no need for any additional kitchen appliances, dinnerware, or home decor. If however you’d like to get us a gift, we’ve organized a registry to help fund our surrogacy process.</p>
-            </div>
-            <div class="flex flex-col justify-center h-full">
-                <p class="max-w-lg text-2xl font-bodycopy">If you’d like to help us build a family, here’s our cash registry:</p>
-                <button class="inline-flex items-center px-8 py-4 my-10 tracking-wider text-center text-white uppercase shadow-sm bg-jh-navy w-min font-subhead whitespace-nowrap hover:shadow-md hover:bg-opacity-95">
+	<section id="header" class="flex flex-col h-screen scroll-snap-y-top">
+		{# top #}
+		<div class="flex flex-col flex-grow">
+			<div class="flex-grow">
+				<div class=""></div>
+			</div>
+			<div class="flex flex-col flex-none w-full h-1/3 ">
+				<div class="flex flex-col justify-end w-full">
+					<h1 class="text-2xl subpixel-antialiased tracking-widest uppercase md:text-3xl font-subhead">Jeremy and Hans</h1>
+				</div>
+				<div class="flex flex-grow divide-x divide-gray-800 h-1/2 md:h-1/3 xl:h-1/2 divide-solid">
+					<div class="flex-grow"></div>
+					<div class="flex-grow"></div>
+				</div>
+				<div>
+					<p class="text-3xl leading-none tracking-wide font-headline md:text-5xl">09 October</p>
+				</div>
+				<div class="flex text-3xl leading-none divide-x divide-gray-800 divide-solid font-headline md:text-5xl">
+					<div class="flex justify-end flex-1 px-2">
+						<p>2020</p>
+					</div>
+					<div class="flex justify-start flex-1 px-2">
+						<p class="line-through">2021</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-grow divide-x divide-gray-800 divide divide-solid">
+				<div class="flex-grow"></div>
+				<div class="flex-grow"></div>
+			</div>
+		</div>
+		{# end top #}
+		{# hero image #}
+		<div class="full-width-div 2xl:bg-hero-1">
+			<picture class="full-width-picture">
+				<source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
+				{# 2xl #}
+				<source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
+				{# xl #}
+				<source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
+				{# lg #}
+				<source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
+				{# md #}
+				<source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
+				{# sm #}
+				<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1621867913/wedding_v2/0224_enc5bm">
+				{# extra sm #}
+				<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1621867913/wedding_v2/0224_enc5bm">
+				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
+			</picture>
+		</div>
+		{# hero image #}
+	</section>
+	<section class="flex justify-center bg-jh-sea-foam scroll-snap-y-top">
+		<div class="section-std-div">
+			<h3 class="inline text-section-h3 sm:hidden md:inline xl:hidden md:order-1">Postponing our reception&hellip; for a great reason!</h3>
+			<h3 class="hidden text-section-h3 sm:inline md:hidden xl:inline md:order-1">Postponing our reception&hellip;<br> for a great reason!</h3>
+			<p class="text-lg text-section-p md:order-3">After careful thought, we’ve decided to postpone our wedding reception and instead are putting our efforts towards building our family through surrogacy.</p>
+			<p class="text-section-p md:order-2">We’ll definitely have the reception at some point in the future, namely when the world has learned to responsibly live with covid so that our family and friends both in the US and overseas can confidently travel in to celebrate.</p>
+			<p class="text-section-p md:order-4">In the meantime, we hope to share good news on our family building progress soon. Until then, we wanted to share more about our small wedding ceremony from 2020.</p>
+		</div>
+	</section>
+	<section class="flex justify-center bg-jh-ice scroll-snap-y-top">
+		<div class="section-std-div">
+			<div class="">
+				<h3 class="tracking-wider uppercase font-subhead">It's not necessary, but&hellip;</h3>
+				<h3 class="mb-4 text-4xl leading-relaxed font-headline">Registry</h3>
+				<p class="max-w-xl text-lg leading-relaxed font-bodycopy">So many of you have been so kind to ask whether we’re registered. Everyone probably knows that we have no need for any additional kitchen appliances, dinnerware, or home decor. If however you’d like to get us a gift, we’ve organized a registry to help fund our surrogacy process.</p>
+			</div>
+			<div class="flex flex-col justify-center h-full">
+				<p class="max-w-lg text-2xl font-bodycopy">If you’d like to help us build a family, here’s our cash registry:</p>
+				<button class="inline-flex items-center px-8 py-4 my-10 tracking-wider text-center text-white uppercase shadow-sm bg-jh-navy w-min font-subhead whitespace-nowrap hover:shadow-md hover:bg-opacity-95">
                     Thankful Registry
                 </button>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="section-std-div scroll-snap-mandate">
-            <h3 class="text-section-h3 md:order-1">Getting Ready</h3>
-            <p class="text-section-p">Normally “getting ready” photos are of suits and ties. In our case, we planned and catered the wedding ourselves – of course with the help of Catherine, Claire, and Kris, aka The Brickyard). And in true Brickyard fashion, this story starts with flowers and our to do list in the kitchen.</p>
-            <p class="text-section-p">A Picture</p>
-            <p class="text-section-p md:order-4">Another Picture</p>
-        </div>
-        <div class="full-width-div 2xl:bg-hero-2 scroll-snap-y-top">
-            <picture class="full-width-picture">
-                <source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
-                {# 2xl #}
-                <source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
-                {# xl #}
-                <source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
-                {# lg #}
-                <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
-                {# md #}
-                <source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
-                {# sm #}
-                <source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1622084651/wedding_v2/0026_j98rpe">
-                {# extra sm #}
-                <source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1622084651/wedding_v2/0026_j98rpe">
-                <img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
-            </picture>
-        </div>
-
-    </section>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="section-pics-div scroll-snap-y-top">
+			<div class="flex flex-col first md:col-span-3">
+				<h3 class="text-section-h3">Getting Ready</h3>
+				<p class="text-section-p">Normally “getting ready” photos are of suits and ties. In our case, we planned and catered the wedding ourselves – of course with the help of Catherine, Claire, and Kris, aka The Brickyard). And in true Brickyard fashion, this story starts with flowers and our to do list in the kitchen.</p>
+				<p class="text-section-p">A Picture</p>
+			</div>
+			<div class="second md:col-span-3">
+				<p class="text-section-p">Another Picture</p>
+			</div>
+			<div class="w-full bg-pink-700 second md:col-span-4">
+				<p class="text-section-p">Picture 1</p>
+			</div>
+			<div class="w-full bg-blue-700 second md:col-span-2">
+				<p class="text-section-p">Picture 2</p>
+			</div>
+			<div class="w-full bg-pink-700 second md:col-span-2">
+				<p class="text-section-p">Picture 3</p>
+			</div>
+			<div class="w-full bg-blue-700 second md:col-span-4">
+				<p class="text-section-p">Picture 4</p>
+			</div>
+		</div>
+		<div class="full-width-div 2xl:bg-hero-2 scroll-snap-y-top">
+			<picture class="full-width-picture">
+				<source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
+				{# 2xl #}
+				<source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
+				{# xl #}
+				<source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
+				{# lg #}
+				<source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
+				{# md #}
+				<source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
+				{# sm #}
+				<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1622084651/wedding_v2/0026_j98rpe">
+				{# extra sm #}
+				<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1622084651/wedding_v2/0026_j98rpe">
+				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
+			</picture>
+		</div>
+	</section>
 </main>
 {# Breakpoint Indicator #}
 <div class="fixed bottom-0 right-0 flex items-center p-2 m-2 text-sm text-pink-600 bg-gray-300 border border-gray-400 rounded">
-    <svg class="inline w-auto h-6" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill="url(#paint0_linear)" fill-rule="evenodd" clip-rule="evenodd" d="M32 16C24.8 16 20.3 19.6 18.5 26.8C21.2 23.2 24.35 21.85 27.95 22.75C30.004 23.2635 31.4721 24.7536 33.0971 26.4031C35.7443 29.0901 38.8081 32.2 45.5 32.2C52.7 32.2 57.2 28.6 59 21.4C56.3 25 53.15 26.35 49.55 25.45C47.496 24.9365 46.0279 23.4464 44.4029 21.7969C41.7557 19.1099 38.6919 16 32 16ZM18.5 32.2C11.3 32.2 6.8 35.8 5 43C7.7 39.4 10.85 38.05 14.45 38.95C16.504 39.4635 17.9721 40.9536 19.5971 42.6031C22.2443 45.2901 25.3081 48.4 32 48.4C39.2 48.4 43.7 44.8 45.5 37.6C42.8 41.2 39.65 42.55 36.05 41.65C33.996 41.1365 32.5279 39.6464 30.9029 37.9969C28.2557 35.3099 25.1919 32.2 18.5 32.2Z"></path>
-        <defs>
-            <linearGradient id="paint0_linear" x1="3.5" y1="16" x2="59" y2="48" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#2298BD"></stop>
-                <stop offset="1" stop-color="#0ED7B5"></stop>
-            </linearGradient>
-        </defs>
-    </svg>
-    {# Current breakpoint #}
-    <span class="ml-1 sm:hidden md:hidden lg:hidden xl:hidden">default (&lt; 640px)</span>
-    <span class="hidden ml-1 font-extrabold sm:inline md:hidden">sm - 641px</span>
-    <span class="hidden ml-1 font-extrabold md:inline lg:hidden">md - 768px</span>
-    <span class="hidden ml-1 font-extrabold lg:inline xl:hidden">lg - 1024px</span>
-    <span class="hidden ml-1 font-extrabold xl:inline 2xl:hidden">xl - 1280px</span>
-    <span class="hidden ml-1 font-extrabold 2xl:inline">2xl - 1536px</span>
+	<svg class="inline w-auto h-6" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path fill="url(#paint0_linear)" fill-rule="evenodd" clip-rule="evenodd" d="M32 16C24.8 16 20.3 19.6 18.5 26.8C21.2 23.2 24.35 21.85 27.95 22.75C30.004 23.2635 31.4721 24.7536 33.0971 26.4031C35.7443 29.0901 38.8081 32.2 45.5 32.2C52.7 32.2 57.2 28.6 59 21.4C56.3 25 53.15 26.35 49.55 25.45C47.496 24.9365 46.0279 23.4464 44.4029 21.7969C41.7557 19.1099 38.6919 16 32 16ZM18.5 32.2C11.3 32.2 6.8 35.8 5 43C7.7 39.4 10.85 38.05 14.45 38.95C16.504 39.4635 17.9721 40.9536 19.5971 42.6031C22.2443 45.2901 25.3081 48.4 32 48.4C39.2 48.4 43.7 44.8 45.5 37.6C42.8 41.2 39.65 42.55 36.05 41.65C33.996 41.1365 32.5279 39.6464 30.9029 37.9969C28.2557 35.3099 25.1919 32.2 18.5 32.2Z"></path>
+		<defs>
+			<linearGradient id="paint0_linear" x1="3.5" y1="16" x2="59" y2="48" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#2298BD"></stop>
+				<stop offset="1" stop-color="#0ED7B5"></stop>
+			</linearGradient>
+		</defs>
+	</svg>
+	{# Current breakpoint #}
+	<span class="ml-1 sm:hidden md:hidden lg:hidden xl:hidden">default (&lt; 640px)</span>
+	<span class="hidden ml-1 font-extrabold sm:inline md:hidden">sm - 641px</span>
+	<span class="hidden ml-1 font-extrabold md:inline lg:hidden">md - 768px</span>
+	<span class="hidden ml-1 font-extrabold lg:inline xl:hidden">lg - 1024px</span>
+	<span class="hidden ml-1 font-extrabold xl:inline 2xl:hidden">xl - 1280px</span>
+	<span class="hidden ml-1 font-extrabold 2xl:inline">2xl - 1536px</span>
 </div>
 {# End Breakpoint Indicator #}
