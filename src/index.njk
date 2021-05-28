@@ -3,6 +3,24 @@ layout: base.njk
 title: Jeremy and Hans
 ---
 
+{% macro inlinepic(version, filename, alt) %}
+	<img
+	 class="w-full"
+	 sizes="(max-width: 641px) 90vw, 50vw"
+   srcset="https://res.cloudinary.com/dsq8eoc9l/w_160,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 160w,
+		https://res.cloudinary.com/dsq8eoc9l/w_320,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 320w,
+		https://res.cloudinary.com/dsq8eoc9l/w_384,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 384w,
+		https://res.cloudinary.com/dsq8eoc9l/w_512,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 512w,
+		https://res.cloudinary.com/dsq8eoc9l/w_640,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 640w,
+		https://res.cloudinary.com/dsq8eoc9l/w_768,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 768w,
+		https://res.cloudinary.com/dsq8eoc9l/w_1024,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 1024w,
+		https://res.cloudinary.com/dsq8eoc9l/w_1280,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 1280w,
+		https://res.cloudinary.com/dsq8eoc9l/w_1536,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 1536w"
+	src="https://res.cloudinary.com/dsq8eoc9l/w_512,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }}"
+	alt="{{ alt }}"
+/>
+{% endmacro %}
+
 <main id="main" class="text-center">
 	<section id="header" class="flex flex-col h-screen scroll-snap-y-top">
 		{# top #}
@@ -89,7 +107,7 @@ title: Jeremy and Hans
 				<p class="text-section-p">A Picture</p>
 			</div>
 			<div class="second md:col-span-3">
-				<p class="text-section-p">Another Picture</p>
+				{{ inlinepic('v1622143220','7885_d6r0hd','Claire and Jeremy preparing arrangements after a trip to the flower market.') }}
 			</div>
 			<div class="w-full bg-pink-700 second md:col-span-4">
 				<p class="text-section-p">Picture 1</p>
