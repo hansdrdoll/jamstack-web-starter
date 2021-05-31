@@ -19,21 +19,22 @@ title: Jeremy and Hans
 		https://res.cloudinary.com/dsq8eoc9l/w_2000,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 2000w"
 	src="https://res.cloudinary.com/dsq8eoc9l/w_512,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }}"
 	alt="{{ alt }}"
+	loading="lazy"
 />
 {% endmacro %}
 
 <main id="main" class="text-center">
-	<section id="header" class="flex flex-col h-screen scroll-snap-y-top">
+	<section id="header" class="flex flex-col min-h-screen scroll-snap-y-top">
 		{# top #}
-		<div class="flex flex-col flex-grow">
+		<div class="flex flex-col flex-grow min-h-full">
 			<div class="flex-grow">
 				<div class=""></div>
 			</div>
 			<div class="flex flex-col flex-none w-full h-1/3 ">
 				<div class="flex flex-col justify-end w-full">
-					<h1 class="text-2xl subpixel-antialiased tracking-widest uppercase md:text-3xl font-subhead">Jeremy and Hans</h1>
+					<h1 class="mt-8 text-2xl tracking-widest uppercase md:text-3xl font-subhead">Jeremy and Hans</h1>
 				</div>
-				<div class="flex flex-grow divide-x divide-gray-800 h-1/2 md:h-1/3 xl:h-1/2 divide-solid">
+				<div class="flex flex-grow h-16 divide-x divide-gray-800 divide-solid">
 					<div class="flex-grow"></div>
 					<div class="flex-grow"></div>
 				</div>
@@ -49,7 +50,7 @@ title: Jeremy and Hans
 					</div>
 				</div>
 			</div>
-			<div class="flex flex-grow divide-x divide-gray-800 divide divide-solid">
+			<div class="flex flex-grow h-8 divide-x divide-gray-800 divide divide-solid">
 				<div class="flex-grow"></div>
 				<div class="flex-grow"></div>
 			</div>
@@ -78,21 +79,20 @@ title: Jeremy and Hans
 	</section>
 	<section class="flex justify-center bg-jh-sea-foam scroll-snap-y-top">
 		<div class="section-std-div">
-			<h3 class="inline text-section-h3 sm:hidden md:inline xl:hidden md:order-1">Postponing our reception&hellip; for a great reason!</h3>
-			<h3 class="hidden text-section-h3 sm:inline md:hidden xl:inline md:order-1">Postponing our reception&hellip;<br> for a great reason!</h3>
-			<p class="text-lg text-section-p md:order-3">After careful thought, we’ve decided to postpone our wedding reception and instead are putting our efforts towards building our family through surrogacy.</p>
-			<p class="text-section-p md:order-2">We’ll definitely have the reception at some point in the future, namely when the world has learned to responsibly live with covid so that our family and friends both in the US and overseas can confidently travel in to celebrate.</p>
-			<p class="text-section-p md:order-4">In the meantime, we hope to share good news on our family building progress soon. Until then, we wanted to share more about our small wedding ceremony from 2020.</p>
+			<h3 class="text-3xl text-section-h3 md:col-start-2 md:col-span-4 lg:col-start-3 lg:col-span-3">Postponing our reception&hellip; for a great reason!</h3>
+			<p class="text-lg text-section-p md:col-start-2 md:col-span-4 lg:col-start-3 lg:col-span-4">After careful thought, we’ve decided to postpone our wedding reception and instead are putting our efforts towards building our family through surrogacy.</p>
+			<p class="text-section-p md:col-start-8 md:col-span-4 md:row-start-1">We’ll definitely have the reception at some point in the future, namely when the world has learned to responsibly live with covid so that our family and friends both in the US and overseas can confidently travel in to celebrate.</p>
+			<p class="text-section-p md:col-start-8 md:col-span-4">In the meantime, we hope to share good news on our family building progress soon. Until then, we wanted to share more about our small wedding ceremony from 2020.</p>
 		</div>
 	</section>
-	<section class="flex justify-center bg-jh-ice scroll-snap-y-top">
+	<section class="flex flex-col justify-center bg-jh-ice scroll-snap-y-top">
 		<div class="section-std-div">
-			<div class="">
+			<div class="md:col-start-2 md:col-span-4 lg:col-start-3 lg:col-span-3">
 				<h3 class="tracking-wider uppercase font-subhead">It's not necessary, but&hellip;</h3>
 				<h3 class="mb-4 text-4xl leading-relaxed font-headline">Registry</h3>
-				<p class="max-w-xl text-lg leading-relaxed font-bodycopy">So many of you have been so kind to ask whether we’re registered. Everyone probably knows that we have no need for any additional kitchen appliances, dinnerware, or home decor. If however you’d like to get us a gift, we’ve organized a registry to help fund our surrogacy process.</p>
+				<p class="max-w-xl leading-relaxed font-bodycopy">So many of you have been so kind to ask whether we’re registered. Everyone probably knows that we have no need for any additional kitchen appliances, dinnerware, or home decor. If however you’d like to get us a gift, we’ve organized a registry to help fund our surrogacy process.</p>
 			</div>
-			<div class="flex flex-col justify-center h-full">
+			<div class="flex flex-col justify-end h-full md:col-start-8 md:col-span-4">
 				<p class="max-w-lg text-2xl font-bodycopy">If you’d like to help us build a family, here’s our cash registry:</p>
 				<button class="inline-flex items-center px-8 py-4 my-10 tracking-wider text-center text-white uppercase shadow-sm bg-jh-navy w-min font-subhead whitespace-nowrap hover:shadow-md hover:bg-opacity-95">
                     Thankful Registry
@@ -100,18 +100,21 @@ title: Jeremy and Hans
 			</div>
 		</div>
 	</section>
-	<section class="flex justify-center">
+	<section class="flex flex-col justify-center">
 		<div class="section-pics-div scroll-snap-y-top">
 			<div class="flex flex-col md:col-start-2 md:col-span-4 lg:col-start-3 lg:col-span-3">
 				<h3 class="text-section-h3">Getting Ready</h3>
 				<p class="text-section-p">Normally “getting ready” photos are of suits and ties. In our case, we planned and catered the wedding ourselves – of course with the help of Catherine, Claire, and Kris, aka The Brickyard). And in true Brickyard fashion, this story starts with flowers and our to do list in the kitchen.</p>
 			</div>
-			<div class="w-full md:col-span-5 md:col-start-7 md:row-span-2">
+			<div class="w-full md:col-span-5 md:col-start-7 md:row-span-2 place-self-start">
 				{{ inlinepic('v1622143220','7885_d6r0hd','Claire and Jeremy preparing arrangements after a trip to the flower market.') }}
 			</div>
 			<div class="w-full bg-pink-700 md:col-span-4 md:col-start-2 md:row-start-2">
 				{{ inlinepic('v1622143119','0035_ptsjae','Our dinner menu, pinned to a kitchen cabinet door.') }}
 			</div>
+		</div>
+		<div class="bg-white section-std-div">
+			<p class="italic font-bodycopy md:col-start-2 text-jh-hunter-green md:col-span-5">Photos credit: Natura Collective</p>
 		</div>
 	</section>
 	<section>
@@ -195,11 +198,11 @@ title: Jeremy and Hans
 	</section>
 	<section class="flex justify-center">
 		<div class="section-pics-div scroll-snap-y-top">
-			<div class="md:col-start-2 md:col-span-6 md:row-span-2">
+			<div class="md:col-start-2 md:col-span-5 md:row-span-2 lg:col-span-6 lg:col-start-2">
 				{{ inlinepic('v1622142575','0286_kzpiz9','Hans and Jeremy hold hands.') }}
 			</div>
 			<div class="flex flex-col md:col-start-8 md:col-span-4 lg:col-start-9 lg:col-span-2">
-				<h3 class="text-section-h3">The Ceremony</h3>
+				<h3 class="text-section-h3">The&nbsp;Ceremony</h3>
 				<p class="text-section-p">Kris officiated our short rooftop ceremony. As you can see, our furry nephew Frank stood us up with how well Catherine dressed him.</p>
 			</div>
 			<div class="md:col-start-8 md:col-span-4 lg:col-start-9 lg:col-span-3">
@@ -286,8 +289,19 @@ title: Jeremy and Hans
 		</div>
 	</section>
 </main>
+<footer>
+	<section class="flex flex-col bg-jh-navy">
+		<div class="flex flex-grow h-48 divide-x divide-jh-white divide divide-solid">
+			<div class="flex-grow"></div>
+			<div class="flex-grow"></div>
+		</div>
+		<div class="flex flex-col flex-grow h-48 mt-4 tracking-wider text-center text-white uppercase font-subhead">
+			<h3>Expect more news&hellip;<br/>about when we're expecting!</h3>
+		</div>
+	</section>
+</footer>
 {# Breakpoint Indicator #}
-{#
+
 <div class="fixed bottom-0 right-0 flex items-center p-2 m-2 text-sm text-pink-600 bg-gray-300 border border-gray-400 rounded">
 	<svg class="inline w-auto h-6" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path fill="url(#paint0_linear)" fill-rule="evenodd" clip-rule="evenodd" d="M32 16C24.8 16 20.3 19.6 18.5 26.8C21.2 23.2 24.35 21.85 27.95 22.75C30.004 23.2635 31.4721 24.7536 33.0971 26.4031C35.7443 29.0901 38.8081 32.2 45.5 32.2C52.7 32.2 57.2 28.6 59 21.4C56.3 25 53.15 26.35 49.55 25.45C47.496 24.9365 46.0279 23.4464 44.4029 21.7969C41.7557 19.1099 38.6919 16 32 16ZM18.5 32.2C11.3 32.2 6.8 35.8 5 43C7.7 39.4 10.85 38.05 14.45 38.95C16.504 39.4635 17.9721 40.9536 19.5971 42.6031C22.2443 45.2901 25.3081 48.4 32 48.4C39.2 48.4 43.7 44.8 45.5 37.6C42.8 41.2 39.65 42.55 36.05 41.65C33.996 41.1365 32.5279 39.6464 30.9029 37.9969C28.2557 35.3099 25.1919 32.2 18.5 32.2Z"></path>
@@ -304,5 +318,5 @@ title: Jeremy and Hans
 	<span class="hidden ml-1 font-extrabold lg:inline xl:hidden">lg - 1024px</span>
 	<span class="hidden ml-1 font-extrabold xl:inline 2xl:hidden">xl - 1280px</span>
 	<span class="hidden ml-1 font-extrabold 2xl:inline">2xl - 1536px</span>
-</div> #}
+</div>
 {# End Breakpoint Indicator #}
