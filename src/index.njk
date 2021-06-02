@@ -23,7 +23,7 @@ title: Jeremy and Hans
 />
 {% endmacro %}
 
-<main id="main" class="text-center">
+<main id="main" class="text-center bg-gray-50">
 	<section id="header" class="flex flex-col min-h-screen scroll-snap-y-top">
 		{# top #}
 		<div class="flex flex-col flex-grow min-h-full">
@@ -72,7 +72,7 @@ title: Jeremy and Hans
 				<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1621867913/wedding_v2/0224_enc5bm">
 				{# extra sm #}
 				<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1621867913/wedding_v2/0224_enc5bm">
-				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
+				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm" loading="lazy">
 			</picture>
 		</div>
 		{# hero image #}
@@ -80,27 +80,27 @@ title: Jeremy and Hans
 	<section class="flex justify-center bg-jh-sea-foam scroll-snap-y-top">
 		<div class="section-std-div">
 			<h3 class="text-3xl text-section-h3 md:col-start-2 md:col-span-4 lg:col-start-3 lg:col-span-3">Postponing our reception&hellip; for a great reason!</h3>
-			<p class="text-lg text-section-p md:col-start-2 md:col-span-4 lg:col-start-3 lg:col-span-4">After careful thought, we’ve decided to postpone our wedding reception and instead are putting our efforts towards building our family through surrogacy.</p>
+			<p class="text-lg text-section-p md:col-start-2 md:col-span-4 lg:col-start-3 lg:col-span-4">After careful thought, we’ve decided to postpone our wedding reception and instead are putting our efforts towards building our family.</p>
 			<p class="text-section-p md:col-start-8 md:col-span-4 md:row-start-1">We’ll definitely have the reception at some point in the future, namely when the world has learned to responsibly live with covid so that our family and friends both in the US and overseas can confidently travel in to celebrate.</p>
 			<p class="text-section-p md:col-start-8 md:col-span-4">In the meantime, we hope to share good news on our family building progress soon. Until then, we wanted to share more about our small wedding ceremony from 2020.</p>
 		</div>
 	</section>
-	<section class="flex flex-col justify-center bg-jh-ice scroll-snap-y-top">
+	<section class="flex justify-center bg-jh-ice scroll-snap-y-top">
 		<div class="section-std-div">
 			<div class="md:col-start-2 md:col-span-4 lg:col-start-3 lg:col-span-3">
 				<h3 class="tracking-wider uppercase font-subhead">It's not necessary, but&hellip;</h3>
 				<h3 class="mb-4 text-4xl leading-relaxed font-headline">Registry</h3>
-				<p class="max-w-xl leading-relaxed font-bodycopy">So many of you have been so kind to ask whether we’re registered. Everyone probably knows that we have no need for any additional kitchen appliances, dinnerware, or home decor. If however you’d like to get us a gift, we’ve organized a registry to help fund our surrogacy process.</p>
+				<a href="http://www.zola.com/registry/jeremyandhans" target="_blank" class="inline-flex items-center px-6 py-4 tracking-wider text-center text-white uppercase transition-all duration-200 rounded-md shadow-sm leading-12 bg-jh-navy w-min font-subhead whitespace-nowrap hover:shadow-md hover:bg-opacity-90 focus:ring-2 focus:ring-white">
+					<span class="mt-1">Our Zola Registry</span>
+				</a>
 			</div>
-			<div class="flex flex-col justify-end h-full md:col-start-8 md:col-span-4">
-				<p class="max-w-lg text-2xl font-bodycopy">If you’d like to help us build a family, here’s our cash registry:</p>
-				<button class="inline-flex items-center px-8 py-4 my-10 tracking-wider text-center text-white uppercase shadow-sm bg-jh-navy w-min font-subhead whitespace-nowrap hover:shadow-md hover:bg-opacity-95">
-                    Thankful Registry
-                </button>
+			<div class="flex flex-col justify-center h-full md:col-start-8 md:col-span-4">
+				<p class="max-w-xl leading-relaxed font-bodycopy">So many of you have been so kind to ask whether we’re registered. Everyone probably knows that we have no need for a stand mixer, dutch oven, or coffee maker. If, however, you’d like to get us a gift, we’ve organized a registry on Zola.</p>
+				{# <p class="max-w-lg text-2xl font-bodycopy">If you’d like to help us build a family, here’s our cash registry:</p> #}
 			</div>
 		</div>
 	</section>
-	<section class="flex flex-col justify-center">
+	<section class="flex flex-col items-center">
 		<div class="section-pics-div scroll-snap-y-top">
 			<div class="flex flex-col md:col-start-2 md:col-span-4 lg:col-start-3 lg:col-span-3">
 				<h3 class="text-section-h3">Getting Ready</h3>
@@ -113,12 +113,13 @@ title: Jeremy and Hans
 				{{ inlinepic('v1622143119','0035_ptsjae','Our dinner menu, pinned to a kitchen cabinet door.') }}
 			</div>
 		</div>
-		<div class="bg-white section-std-div">
-			<p class="italic font-bodycopy md:col-start-2 text-jh-hunter-green md:col-span-5">Photos credit: Natura Collective</p>
+		<div class="w-full section-std-div">
+			<p class="italic font-bodycopy md:col-start-2 text-jh-hunter-green md:col-span-5">Photos credit: <a href="https://naturacollective.com/" target="_blank" class="hover:underline">Natura Collective</a>
+			</p>
 		</div>
 	</section>
 	<section>
-		<div class="full-width-div 2xl:bg-hero-2 scroll-snap-y-top">
+		<div class="full-width-div md:h-auto bg-hero-2 2xl:bg-hero-2 scroll-snap-y-top">
 			<picture class="full-width-picture">
 				<source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
 				{# 2xl #}
@@ -133,7 +134,7 @@ title: Jeremy and Hans
 				<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1622084651/wedding_v2/0026_j98rpe">
 				{# extra sm #}
 				<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1622084651/wedding_v2/0026_j98rpe">
-				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
+				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe" loading="lazy">
 			</picture>
 		</div>
 	</section>
@@ -142,7 +143,7 @@ title: Jeremy and Hans
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
 				{{ inlinepic('v1622143421','0012_k1xzge','Wide shot of table settings.') }}
 			</div>
-			<div class="flex flex-col md:col-start-7 md:col-span-4 lg:col-start-7 lg:col-span-3">
+			<div class="flex flex-col md:col-start-7 md:col-span-4 xl:col-start-7 xl:col-span-3">
 				<h3 class="text-section-h3">Setting Up</h3>
 				<p class="text-section-p">We had an intimate-yet-socially-distanced reception setup in the backyard for our eight guests (plus our two nephews!).</p>
 			</div>
@@ -192,7 +193,7 @@ title: Jeremy and Hans
 				<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1622166017/wedding_v2/0170_emhc1x">
 				{# extra sm #}
 				<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1622166017/wedding_v2/0170_emhc1x">
-				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_faces/v1622166017/wedding_v2/0170_emhc1x">
+				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_faces/v1622166017/wedding_v2/0170_emhc1x" loading="lazy">
 			</picture>
 		</div>
 	</section>
@@ -223,7 +224,7 @@ title: Jeremy and Hans
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
 				{{ inlinepic('v1622142583','0558_kr2bog','Catherine holding Frank.') }}
 			</div>
-			<div class="flex flex-col md:col-start-8 md:col-span-4">
+			<div class="flex flex-col justify-end md:col-start-8 md:col-span-4 md:h-48">
 				<p class="text-xl text-section-p">As the sun set, we had Lambrusco Blood Orange cocktails for a quick toast before our reception.</p>
 			</div>
 			<div class="md:col-start-8 md:col-span-4 md:row-span-2">
@@ -232,26 +233,26 @@ title: Jeremy and Hans
 			<div class="md:col-start-2 md:col-span-5 md:row-span-2">
 				{{ inlinepic('v1622142582','0563_djciqw','Hans and Jeremy holding champange bottles.') }}
 			</div>
-			<div class="md:col-start-8 md:col-span-4">
+			<div class="md:col-start-8 md:col-span-4 md:row-span-2">
 				{{ inlinepic('v1622142587','0579_duafh1','A baby.') }}
 			</div>
-			<div class="md:col-start-2 md:col-span-5 md:row-span-2 place-self-start">
+			<div class="md:col-start-2 md:col-span-5 md:row-span-2 md:place-self-start">
 				{{ inlinepic('v1622166591','0596_ncnmow','A view from above of the table settings.') }}
 			</div>
 			<div class="md:col-start-8 md:col-span-4">
 				{{ inlinepic('v1622166647','0581_ruqadl','Jeremy and Hans hold up their cocktail glasses for a toast.') }}
 			</div>
+			<div class="md:col-start-2 md:col-span-5 md:row-span-2 lg:col-span-6 lg:col-start-2">
+				{{ inlinepic('v1622166692','0607_vnpref','A view from above of the reception with everyone seated.') }}
+			</div>
 			<div class="flex flex-col md:col-start-8 md:col-span-4 lg:col-start-9 lg:col-span-3">
 				<h3 class="text-section-h3">The Reception</h3>
 				<p class="text-section-p">We lucked out with great fall weather for our backyard reception. Our menu was full of our fall favorites – braises, mac & cheese, and brussel sprouts – followed by Jeremy’s favorite white cake recipe with marshmallow buttercream. </p>
 			</div>
-			<div class="md:col-start-2 md:col-span-6 md:row-span-2">
-				{{ inlinepic('v1622166692','0607_vnpref','A view from above of the reception with everyone seated.') }}
-			</div>
 			<div class="md:col-start-9 md:col-span-3 lg:col-start-9 lg:col-span-3">
 				{{ inlinepic('v1622166761','1901','A full champange glass and open bottle sit on the table next to the dinner menu.') }}
 			</div>
-			<div class="md:col-start-2 md:col-span-3 place-self-start">
+			<div class="md:col-start-2 md:col-span-3 md:place-self-start">
 				{{ inlinepic('v1622166878','6947_vmi08n','The cake.') }}
 			</div>
 			<div class="md:col-start-6 md:col-span-6 lg:col-start-6">
@@ -263,7 +264,7 @@ title: Jeremy and Hans
 			<div class="flex flex-col md:col-start-7 md:col-span-4 lg:col-span-3 lg:col-start-7">
 				<p class="text-xl text-section-p">We made a cake for ourselves, plus mini cakes for each of our guests.</p>
 			</div>
-			<div class="md:col-start-7 md:col-span-5 place-self-start">
+			<div class="md:col-start-7 md:col-span-5 md:place-self-start">
 				{{ inlinepic('v1622167215','1301_uzyclu','Hans feeds Jeremy a bite of cake.') }}
 			</div>
 		</div>
@@ -284,7 +285,7 @@ title: Jeremy and Hans
 				<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1622142588/wedding_v2/0616_rzkhhw">
 				{# extra sm #}
 				<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1622142588/wedding_v2/0616_rzkhhw">
-				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1622142588/wedding_v2/0616_rzkhhw">
+				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1622142588/wedding_v2/0616_rzkhhw" loading="lazy">
 			</picture>
 		</div>
 	</section>
@@ -301,8 +302,7 @@ title: Jeremy and Hans
 	</section>
 </footer>
 {# Breakpoint Indicator #}
-
-<div class="fixed bottom-0 right-0 flex items-center p-2 m-2 text-sm text-pink-600 bg-gray-300 border border-gray-400 rounded">
+{# <div class="fixed bottom-0 right-0 flex items-center p-2 m-2 text-sm text-pink-600 bg-gray-300 border border-gray-400 rounded">
 	<svg class="inline w-auto h-6" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path fill="url(#paint0_linear)" fill-rule="evenodd" clip-rule="evenodd" d="M32 16C24.8 16 20.3 19.6 18.5 26.8C21.2 23.2 24.35 21.85 27.95 22.75C30.004 23.2635 31.4721 24.7536 33.0971 26.4031C35.7443 29.0901 38.8081 32.2 45.5 32.2C52.7 32.2 57.2 28.6 59 21.4C56.3 25 53.15 26.35 49.55 25.45C47.496 24.9365 46.0279 23.4464 44.4029 21.7969C41.7557 19.1099 38.6919 16 32 16ZM18.5 32.2C11.3 32.2 6.8 35.8 5 43C7.7 39.4 10.85 38.05 14.45 38.95C16.504 39.4635 17.9721 40.9536 19.5971 42.6031C22.2443 45.2901 25.3081 48.4 32 48.4C39.2 48.4 43.7 44.8 45.5 37.6C42.8 41.2 39.65 42.55 36.05 41.65C33.996 41.1365 32.5279 39.6464 30.9029 37.9969C28.2557 35.3099 25.1919 32.2 18.5 32.2Z"></path>
 		<defs>
@@ -318,5 +318,5 @@ title: Jeremy and Hans
 	<span class="hidden ml-1 font-extrabold lg:inline xl:hidden">lg - 1024px</span>
 	<span class="hidden ml-1 font-extrabold xl:inline 2xl:hidden">xl - 1280px</span>
 	<span class="hidden ml-1 font-extrabold 2xl:inline">2xl - 1536px</span>
-</div>
+</div> #}
 {# End Breakpoint Indicator #}

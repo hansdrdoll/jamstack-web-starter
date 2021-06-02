@@ -21,11 +21,11 @@
 }
 
 .full-width-div {
-	@apply flex justify-center w-full shadow;
+	@apply flex justify-center w-full shadow-md;
 }
 @screen 2xl {
 	.full-width-div {
-		@apply bg-cover;
+		@apply bg-cover shadow;
 	}
 }
 
