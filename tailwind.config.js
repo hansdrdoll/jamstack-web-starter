@@ -26,13 +26,13 @@ module.exports = {
 			},
 			backgroundImage: (theme) => ({
 				"hero-1":
-					"url('https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto:eco,c_lfill,g_center,e_blur:2000/v1621867913/wedding_v2/0224_enc5bm')",
+					"url('https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto:eco,c_lfill,g_center,e_blur:2000/wedding_v2/0224')",
 				"hero-2":
-					"url('https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto:eco,c_lfill,g_center,e_blur:2000/v1621867913/wedding_v2/0224_enc5bm')",
+					"url('https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto:eco,c_lfill,g_center,e_blur:2000/wedding_v2/0224')",
 				"hero-3":
-					"url('https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto:eco,c_lfill,g_center,e_blur:2000/v1622166017/wedding_v2/0170_emhc1x')",
+					"url('https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto:eco,c_lfill,g_center,e_blur:2000/wedding_v2/0170')",
 				"hero-4":
-					"url('https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto:eco,c_lfill,g_center,e_blur:2000/v1622142588/wedding_v2/0616_rzkhhw')",
+					"url('https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto:eco,c_lfill,g_center,e_blur:2000/wedding_v2/0616')",
 			}),
 		},
 	},

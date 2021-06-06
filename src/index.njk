@@ -3,24 +3,28 @@ layout: base.njk
 title: Jeremy and Hans
 ---
 
-{% macro inlinepic(version, filename, alt) %}
-	<img
-	 class="w-full shadow-sm"
-	 sizes="(max-width: 641px) 90vw, 50vw"
-   srcset="https://res.cloudinary.com/dsq8eoc9l/w_160,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 160w,
-		https://res.cloudinary.com/dsq8eoc9l/w_320,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 320w,
-		https://res.cloudinary.com/dsq8eoc9l/w_384,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 384w,
-		https://res.cloudinary.com/dsq8eoc9l/w_512,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 512w,
-		https://res.cloudinary.com/dsq8eoc9l/w_640,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 640w,
-		https://res.cloudinary.com/dsq8eoc9l/w_768,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 768w,
-		https://res.cloudinary.com/dsq8eoc9l/w_1024,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 1024w,
-		https://res.cloudinary.com/dsq8eoc9l/w_1280,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 1280w,
-		https://res.cloudinary.com/dsq8eoc9l/w_1536,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 1536w,
-		https://res.cloudinary.com/dsq8eoc9l/w_2000,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 2000w"
-	src="https://res.cloudinary.com/dsq8eoc9l/w_512,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }}"
-	alt="{{ alt }}"
-	loading="lazy"
-/>
+{% macro inlinepic(filename, alt) %}
+	<div class="imageGallery">
+		<a href="https://res.cloudinary.com/dsq8eoc9l/w_1024,f_auto,q_auto/wedding_v2/nocrop/{{ filename }}">
+			<img
+				class="w-full shadow-sm"
+				sizes="(max-width: 641px) 90vw, 50vw"
+				srcset="https://res.cloudinary.com/dsq8eoc9l/w_160,f_auto,q_auto/wedding_v2/{{ filename }} 160w,
+					https://res.cloudinary.com/dsq8eoc9l/w_320,f_auto,q_auto/wedding_v2/{{ filename }} 320w,
+					https://res.cloudinary.com/dsq8eoc9l/w_384,f_auto,q_auto/wedding_v2/{{ filename }} 384w,
+					https://res.cloudinary.com/dsq8eoc9l/w_512,f_auto,q_auto/wedding_v2/{{ filename }} 512w,
+					https://res.cloudinary.com/dsq8eoc9l/w_640,f_auto,q_auto/wedding_v2/{{ filename }} 640w,
+					https://res.cloudinary.com/dsq8eoc9l/w_768,f_auto,q_auto/wedding_v2/{{ filename }} 768w,
+					https://res.cloudinary.com/dsq8eoc9l/w_1024,f_auto,q_auto/wedding_v2/{{ filename }} 1024w,
+					https://res.cloudinary.com/dsq8eoc9l/w_1280,f_auto,q_auto/wedding_v2/{{ filename }} 1280w,
+					https://res.cloudinary.com/dsq8eoc9l/w_1536,f_auto,q_auto/wedding_v2/{{ filename }} 1536w,
+					https://res.cloudinary.com/dsq8eoc9l/w_2000,f_auto,q_auto/wedding_v2/{{ filename }} 2000w"
+				src="https://res.cloudinary.com/dsq8eoc9l/w_512,f_auto,q_auto/wedding_v2/{{ filename }}"
+				alt="{{ alt }}"
+				loading="lazy"
+			/>
+		</a>
+	</div>
 {% endmacro %}
 
 <main id="main" class="text-center bg-gray-50">
@@ -57,23 +61,25 @@ title: Jeremy and Hans
 		</div>
 		{# end top #}
 		{# hero image #}
-		<div class="full-width-div 2xl:bg-hero-1">
-			<picture class="full-width-picture">
-				<source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
-				{# 2xl #}
-				<source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
-				{# xl #}
-				<source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
-				{# lg #}
-				<source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
-				{# md #}
-				<source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm">
-				{# sm #}
-				<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1621867913/wedding_v2/0224_enc5bm">
-				{# extra sm #}
-				<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1621867913/wedding_v2/0224_enc5bm">
-				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1621867913/wedding_v2/0224_enc5bm" loading="lazy">
-			</picture>
+		<div class="full-width-div 2xl:bg-hero-1 imageGallery">
+			<a href="https://res.cloudinary.com/dsq8eoc9l/w_1024,f_auto,q_auto/wedding_v2/0224">
+				<picture class="full-width-picture">
+					<source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/wedding_v2/0224">
+					{# 2xl #}
+					<source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_center/wedding_v2/0224">
+					{# xl #}
+					<source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_center/wedding_v2/0224">
+					{# lg #}
+					<source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_center/wedding_v2/0224">
+					{# md #}
+					<source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_center/wedding_v2/0224">
+					{# sm #}
+					<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/wedding_v2/0224">
+					{# extra sm #}
+					<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/wedding_v2/0224">
+					<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/wedding_v2/0224" loading="lazy">
+				</picture>
+			</a>
 		</div>
 		{# hero image #}
 	</section>
@@ -90,12 +96,12 @@ title: Jeremy and Hans
 			<div class="md:col-start-2 md:col-span-4 lg:col-start-3 lg:col-span-3">
 				<h3 class="tracking-wider uppercase font-subhead">It's not necessary, but&hellip;</h3>
 				<h3 class="mb-4 text-4xl leading-relaxed font-headline">Registry</h3>
-				<a href="http://www.zola.com/registry/jeremyandhans" target="_blank" class="inline-flex items-center px-6 py-4 tracking-wider text-center text-white uppercase transition-all duration-200 rounded-md shadow-sm leading-12 bg-jh-navy w-min font-subhead whitespace-nowrap hover:shadow-md hover:bg-opacity-90 focus:ring-2 focus:ring-white">
+				<a href="https://www.zola.com/registry/jeremyandhans" target="_blank" class="inline-flex items-center px-6 py-4 tracking-wider text-center text-white uppercase transition-all duration-200 rounded-md shadow-sm leading-12 bg-jh-navy w-min font-subhead whitespace-nowrap hover:shadow-md hover:bg-opacity-90 focus:ring-2 focus:ring-white">
 					<span class="mt-1">Our Zola Registry</span>
 				</a>
 			</div>
 			<div class="flex flex-col justify-center h-full md:col-start-8 md:col-span-4">
-				<p class="max-w-xl leading-relaxed font-bodycopy">So many of you have been so kind to ask whether we’re registered. Everyone probably knows that we have no need for a stand mixer, dutch oven, or coffee maker. If, however, you’d like to get us a gift, we’ve organized a registry on Zola.</p>
+				<p class="max-w-xl leading-relaxed font-bodycopy">So many of you have been kind to ask whether we’re registered. Everyone probably knows that we have no need for a stand mixer, dutch oven, or coffee maker. If, however, you’d like to get us a gift, we’ve organized a registry on Zola.</p>
 				{# <p class="max-w-lg text-2xl font-bodycopy">If you’d like to help us build a family, here’s our cash registry:</p> #}
 			</div>
 		</div>
@@ -107,146 +113,150 @@ title: Jeremy and Hans
 				<p class="text-section-p">Normally “getting ready” photos are of suits and ties. In our case, we planned and catered the wedding ourselves – of course with the help of Catherine, Claire, and Kris, aka The Brickyard). And in true Brickyard fashion, this story starts with flowers and our to do list in the kitchen.</p>
 			</div>
 			<div class="w-full md:col-span-5 md:col-start-7 md:row-span-2 place-self-start">
-				{{ inlinepic('v1622143220','7885_d6r0hd','Claire and Jeremy preparing arrangements after a trip to the flower market.') }}
+				{{ inlinepic('7885','Claire and Jeremy preparing arrangements after a trip to the flower market.') }}
 			</div>
 			<div class="w-full md:col-span-4 md:col-start-2 md:row-start-2">
-				{{ inlinepic('v1622143119','0035_ptsjae','Our dinner menu, pinned to a kitchen cabinet door.') }}
+				{{ inlinepic('0035','Our dinner menu, pinned to a kitchen cabinet door.') }}
 			</div>
 		</div>
-		<div class="w-full section-std-div">
+		{# <div class="w-full section-std-div">
 			<p class="italic font-bodycopy md:col-start-2 text-jh-hunter-green md:col-span-5">Photos credit: <a href="https://naturacollective.com/" target="_blank" class="hover:underline">Natura Collective</a>
 			</p>
-		</div>
+		</div> #}
 	</section>
 	<section>
-		<div class="full-width-div md:h-auto bg-hero-2 2xl:bg-hero-2 scroll-snap-y-top">
-			<picture class="full-width-picture">
-				<source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
-				{# 2xl #}
-				<source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
-				{# xl #}
-				<source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
-				{# lg #}
-				<source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
-				{# md #}
-				<source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe">
-				{# sm #}
-				<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1622084651/wedding_v2/0026_j98rpe">
-				{# extra sm #}
-				<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1622084651/wedding_v2/0026_j98rpe">
-				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1622084651/wedding_v2/0026_j98rpe" loading="lazy">
-			</picture>
+		<div class="full-width-div md:h-auto bg-hero-2 2xl:bg-hero-2 scroll-snap-y-top imageGallery">
+			<a href="https://res.cloudinary.com/dsq8eoc9l/w_1024,f_auto,q_auto/wedding_v2/0026">
+				<picture class="full-width-picture">
+					<source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/wedding_v2/0026">
+					{# 2xl #}
+					<source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_center/wedding_v2/0026">
+					{# xl #}
+					<source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_center/wedding_v2/0026">
+					{# lg #}
+					<source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_center/wedding_v2/0026">
+					{# md #}
+					<source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_center/wedding_v2/0026">
+					{# sm #}
+					<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/wedding_v2/0026">
+					{# extra sm #}
+					<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/wedding_v2/0026">
+					<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/wedding_v2/0026" loading="lazy">
+				</picture>
+			</a>
 		</div>
 	</section>
 	<section class="flex justify-center">
 		<div class="section-pics-div scroll-snap-y-top">
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('v1622143421','0012_k1xzge','Wide shot of table settings.') }}
+				{{ inlinepic('0012','Wide shot of table settings.') }}
 			</div>
 			<div class="flex flex-col md:col-start-7 md:col-span-4 xl:col-start-7 xl:col-span-3">
 				<h3 class="text-section-h3">Setting Up</h3>
 				<p class="text-section-p">We had an intimate-yet-socially-distanced reception setup in the backyard for our eight guests (plus our two nephews!).</p>
 			</div>
-			<div class="md:col-start-7 md:col-span-5 ">
-				{{ inlinepic('v1622142570','0010_qd9eo1','Tighter shot of the grooms place settings.') }}
+			<div class="md:col-start-7 md:col-span-5 imageGallery">
+				{{ inlinepic('0010','Tighter shot of the grooms place settings.') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('v1623000172','0023_e8uuhg','Candlesticks and floral arrangements on table settings.') }}
+				{{ inlinepic('0023','Candlesticks and floral arrangements on table settings.') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5 md:row-span-2">
-				{{ inlinepic('v1622143581','0015_cnixlz','Tight shot of menu on a place setting.') }}
+				{{ inlinepic('0015','Tight shot of menu on a place setting.') }}
 			</div>
 			<div class="flex flex-col md:col-start-2 md:col-span-4 md:row-start-5 lg:col-start-2 lg:col-span-3">
 				<h3 class="text-section-h3">Actually getting ready&hellip;</h3>
 				<p class="text-section-p">Up until this moment, we honestly forgot that it was our own wedding! There’s nothing like photographers being present to remind you of that.</p>
 			</div>
 			<div class="md:col-start-7 md:col-span-4 ">
-				{{ inlinepic('v1622143638','0045_tccufu','The grooms jackets hanging up in the dressing room.') }}
+				{{ inlinepic('0045','The grooms jackets hanging up in the dressing room.') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('v1622142565','0062_urt4ex','Hans tying his necktie.') }}
+				{{ inlinepic('0062','Hans tying his necktie.') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5 ">
-				{{ inlinepic('v1622143743','0097_ae26uo','Jeremy helps Hans straighten his pocket square.') }}
+				{{ inlinepic('0097','Jeremy helps Hans straighten his pocket square.') }}
 			</div>
 			<div class="flex flex-col justify-center md:col-start-7 md:col-span-4 md:h-48">
 				<p class="text-xl text-section-p">Our furry nephew Frank checked our outfits, while our non-furry nephew George straightened our ties.</p>
 			</div>
 			<div class="md:col-start-2 md:col-span-4">
-				{{ inlinepic('v1622493756','0057_q4a0r2','Frank the dog!') }}
+				{{ inlinepic('0057','Frank the dog!') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-4 ">
-				{{ inlinepic('v1622143836','0154_m4wqqc','Hans holding a baby.') }}
+				{{ inlinepic('0154','Hans holding a baby.') }}
 			</div>
 		</div>
 	</section>
 	<section class="flex">
-		<div class="full-width-div 2xl:bg-hero-3 scroll-snap-y-top">
-			<picture class="full-width-picture">
-				<source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_faces/v1622166017/wedding_v2/0170_emhc1x">
-				{# 2xl #}
-				<source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_faces/v1622166017/wedding_v2/0170_emhc1x">
-				{# xl #}
-				<source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_faces/v1622166017/wedding_v2/0170_emhc1x">
-				{# lg #}
-				<source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_faces/v1622166017/wedding_v2/0170_emhc1x">
-				{# md #}
-				<source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_faces/v1622166017/wedding_v2/0170_emhc1x">
-				{# sm #}
-				<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1622166017/wedding_v2/0170_emhc1x">
-				{# extra sm #}
-				<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1622166017/wedding_v2/0170_emhc1x">
-				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_faces/v1622166017/wedding_v2/0170_emhc1x" loading="lazy">
-			</picture>
+		<div class="full-width-div 2xl:bg-hero-3 scroll-snap-y-top imageGallery">
+			<a href="https://res.cloudinary.com/dsq8eoc9l/w_1024,f_auto,q_auto/wedding_v2/0170">
+				<picture class="full-width-picture">
+					<source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_faces/wedding_v2/0170">
+					{# 2xl #}
+					<source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_faces/wedding_v2/0170">
+					{# xl #}
+					<source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_faces/wedding_v2/0170">
+					{# lg #}
+					<source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_faces/wedding_v2/0170">
+					{# md #}
+					<source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_faces/wedding_v2/0170">
+					{# sm #}
+					<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/wedding_v2/0170">
+					{# extra sm #}
+					<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/wedding_v2/0170">
+					<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_faces/wedding_v2/0170" loading="lazy">
+				</picture>
+			</a>
 		</div>
 	</section>
 	<section class="flex justify-center">
 		<div class="section-pics-div scroll-snap-y-top">
 			<div class="md:col-start-2 md:col-span-5 md:row-span-2 lg:col-span-6 lg:col-start-2">
-				{{ inlinepic('v1622142575','0286_kzpiz9','Hans and Jeremy hold hands.') }}
+				{{ inlinepic('0286','Hans and Jeremy hold hands.') }}
 			</div>
 			<div class="flex flex-col md:col-start-8 md:col-span-4 lg:col-start-9 lg:col-span-2">
 				<h3 class="text-section-h3">The&nbsp;Ceremony</h3>
 				<p class="text-section-p">Kris officiated our short rooftop ceremony. As you can see, our furry nephew Frank stood us up with how well Catherine dressed him.</p>
 			</div>
 			<div class="md:col-start-8 md:col-span-4 lg:col-start-9 lg:col-span-3">
-				{{ inlinepic('v1622166136','0299_wnxkln','Frank the dog, all dressed up!') }}
+				{{ inlinepic('0299','Frank the dog, all dressed up!') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4">
-				{{ inlinepic('v1622142572','0268_sjc7sg','Hans and Jeremy on the rooftop with the city skyline in focus.') }}
+				{{ inlinepic('0268','Hans and Jeremy on the rooftop with the city skyline in focus.') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5 md:row-span-2">
-				{{ inlinepic('v1622166231','0380_ame4qf','Claire laughs with the grooms.') }}
+				{{ inlinepic('0380','Claire laughs with the grooms.') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('v1622166296','0440_pwxzyt','Jeremy laughs while holding hands with Hans at the front.') }}
+				{{ inlinepic('0440','Jeremy laughs while holding hands with Hans at the front.') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5">
-				{{ inlinepic('v1622166351','0513_jowqft','Jeremy and Hans right after saying I do.') }}
+				{{ inlinepic('0513','Jeremy and Hans right after saying I do.') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('v1622142583','0558_kr2bog','Catherine holding Frank.') }}
+				{{ inlinepic('0558','Catherine holding Frank.') }}
 			</div>
 			<div class="flex flex-col justify-end md:col-start-8 md:col-span-4 md:h-48">
 				<p class="text-xl text-section-p">As the sun set, we had Lambrusco Blood Orange cocktails for a quick toast before our reception.</p>
 			</div>
 			<div class="md:col-start-8 md:col-span-4 md:row-span-2">
-				{{ inlinepic('v1622142588','0568_jw13zp','Cocktails!') }}
+				{{ inlinepic('0568','Cocktails!') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-5 md:row-span-2">
-				{{ inlinepic('v1622142582','0563_djciqw','Hans and Jeremy holding Lambrusco bottles.') }}
+				{{ inlinepic('0563','Hans and Jeremy holding Lambrusco bottles.') }}
 			</div>
 			<div class="md:col-start-8 md:col-span-4 md:row-span-2">
-				{{ inlinepic('v1622142587','0579_duafh1','A baby.') }}
+				{{ inlinepic('0579','A baby.') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-5 md:row-span-2 md:place-self-start">
-				{{ inlinepic('v1622166591','0596_ncnmow','A view from above of the table settings.') }}
+				{{ inlinepic('0596','A view from above of the table settings.') }}
 			</div>
 			<div class="md:col-start-8 md:col-span-4">
-				{{ inlinepic('v1622166647','0581_ruqadl','Jeremy and Hans hold up their cocktail glasses for a toast.') }}
+				{{ inlinepic('0581','Jeremy and Hans hold up their cocktail glasses for a toast.') }}
 			</div>
 			<div class="flex flex-col space-y-10 md:col-start-2 md:col-span-5 md:row-span-2 lg:col-span-6 lg:col-start-2">
-				{{ inlinepic('v1622166692','0607_vnpref','A view from above of the reception with everyone seated.') }}
+				{{ inlinepic('0607','A view from above of the reception with everyone seated.') }}
 				<div class="max-w-xs md:ml-12">
 					<p class="text-section-p">Special thanks to our photographers <a href="https://naturacollective.com/" target="_blank" class="underline">Natura Collective</a> for documenting our special day!</p>
 				</div>
@@ -256,13 +266,13 @@ title: Jeremy and Hans
 				<p class="block text-section-p">We lucked out with great fall weather for our backyard reception. Our menu was full of our fall favorites – braises, mac & cheese, and brussel sprouts – followed by Jeremy’s favorite white cake recipe with marshmallow buttercream. </p>
 			</div>
 			<div class="md:col-start-9 md:col-span-3 lg:col-start-9 lg:col-span-3">
-				{{ inlinepic('v1622166761','1901','A full champange glass and open bottle sit on the table next to the dinner menu.') }}
+				{{ inlinepic('1901','A full champange glass and open bottle sit on the table next to the dinner menu.') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-3 md:place-self-start md:-mt-12">
-				{{ inlinepic('v1622166878','6947_vmi08n','The cake.') }}
+				{{ inlinepic('6947','The cake.') }}
 			</div>
 			<div class="md:col-start-6 md:col-span-6 lg:col-start-6">
-				{{ inlinepic('v1622166934','0613_czzfbd','Jeremy and Hans seated at the reception.') }}
+				{{ inlinepic('0613','Jeremy and Hans seated at the reception.') }}
 			</div>
 			{# <div class="flex flex-col md:col-start-2 md:col-span-4 lg:col-span-3 lg:col-start-2">
 				<p class="text-xl text-section-p">We made a cake for ourselves, plus mini cakes for each of our guests.</p>
@@ -271,31 +281,33 @@ title: Jeremy and Hans
 				<div class="max-w-xs px-3 mb-12">
 					<p class="px-3 text-xl text-section-p">We made a cake for ourselves, plus mini cakes for each of our guests.</p>
 				</div>
-				{{ inlinepic('v1622167002','2115_pmmryf','The personal sized cake for our guests!') }}
+				{{ inlinepic('2115','The personal sized cake for our guests!') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5 md:place-self-start">
-				{{ inlinepic('v1622167215','1301_uzyclu','Hans feeds Jeremy a bite of cake.') }}
+				{{ inlinepic('1301','Hans feeds Jeremy a bite of cake.') }}
 			</div>
 		</div>
 	</section>
 	<section class="flex">
-		<div class="full-width-div 2xl:bg-hero-4 scroll-snap-y-top">
-			<picture class="full-width-picture">
-				<source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/v1622142588/wedding_v2/0616_rzkhhw">
-				{# 2xl #}
-				<source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_center/v1622142588/wedding_v2/0616_rzkhhw">
-				{# xl #}
-				<source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_center/v1622142588/wedding_v2/0616_rzkhhw">
-				{# lg #}
-				<source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_center/v1622142588/wedding_v2/0616_rzkhhw">
-				{# md #}
-				<source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_center/v1622142588/wedding_v2/0616_rzkhhw">
-				{# sm #}
-				<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/v1622142588/wedding_v2/0616_rzkhhw">
-				{# extra sm #}
-				<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/v1622142588/wedding_v2/0616_rzkhhw">
-				<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/v1622142588/wedding_v2/0616_rzkhhw" loading="lazy">
-			</picture>
+		<div class="full-width-div 2xl:bg-hero-4 scroll-snap-y-top imageGallery">
+			<a href="https://res.cloudinary.com/dsq8eoc9l/w_1024,f_auto,q_auto/wedding_v2/0616">
+				<picture class="full-width-picture">
+					<source media="(max-width: 320px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_320,f_auto,q_auto,c_lfill,g_center/wedding_v2/0616">
+					{# 2xl #}
+					<source media="(min-width: 1536px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_3,w_2000,f_auto,q_auto,c_lfill,g_center/wedding_v2/0616">
+					{# xl #}
+					<source media="(min-width: 1280px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1536,f_auto,q_auto,c_lfill,g_center/wedding_v2/0616">
+					{# lg #}
+					<source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2.5,w_1280,f_auto,q_auto,c_lfill,g_center/wedding_v2/0616">
+					{# md #}
+					<source media="(min-width: 768px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_1024,f_auto,q_auto,c_lfill,g_center/wedding_v2/0616">
+					{# sm #}
+					<source media="(min-width: 640px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1.5,w_768,f_auto,q_auto,c_lfill,g_south/wedding_v2/0616">
+					{# extra sm #}
+					<source media="(min-width: 321px)" srcset="https://res.cloudinary.com/dsq8eoc9l/ar_1,c_crop,z_1.5/w_640,f_auto,q_auto/wedding_v2/0616">
+					<img src="https://res.cloudinary.com/dsq8eoc9l/ar_2,w_600,f_auto,q_auto,c_lfill,g_center/wedd0616_rzkhhw" loading="lazy">
+				</picture>
+			</a>
 		</div>
 	</section>
 </main>
@@ -310,6 +322,18 @@ title: Jeremy and Hans
 		</div>
 	</section>
 </footer>
+
+<link rel="stylesheet" href="{{ '/assets/simple-lightbox.min.css' | url }}">
+<script src="{{ '/assets/simple-lightbox.min.js' | url }}"></script>
+<script>
+	var lightbox = new SimpleLightbox({elements: '.imageGallery a'});
+	lightbox.defauts = {
+		nextOnImageClick: true,
+		closeOnEscapeKey: true,
+		loadingTimeout: 100
+	}
+</script>
+
 {# Breakpoint Indicator #}
 {# <div class="fixed bottom-0 right-0 flex items-center p-2 m-2 text-sm text-pink-600 bg-gray-300 border border-gray-400 rounded">
 	<svg class="inline w-auto h-6" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">

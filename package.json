@@ -30,5 +30,8 @@
 		"tailwindcss": "^2.1.2",
 		"webpack": "^5.37.0",
 		"webpack-cli": "^4.7.0"
+	},
+	"dependencies": {
+		"simple-lightbox": "^2.1.0"
 	}
 }
