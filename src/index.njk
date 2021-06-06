@@ -5,7 +5,7 @@ title: Jeremy and Hans
 
 {% macro inlinepic(version, filename, alt) %}
 	<img
-	 class="w-full shadow"
+	 class="w-full shadow-sm"
 	 sizes="(max-width: 641px) 90vw, 50vw"
    srcset="https://res.cloudinary.com/dsq8eoc9l/w_160,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 160w,
 		https://res.cloudinary.com/dsq8eoc9l/w_320,f_auto,q_auto/{{ version }}/wedding_v2/{{ filename }} 320w,
@@ -109,7 +109,7 @@ title: Jeremy and Hans
 			<div class="w-full md:col-span-5 md:col-start-7 md:row-span-2 place-self-start">
 				{{ inlinepic('v1622143220','7885_d6r0hd','Claire and Jeremy preparing arrangements after a trip to the flower market.') }}
 			</div>
-			<div class="w-full bg-pink-700 md:col-span-4 md:col-start-2 md:row-start-2">
+			<div class="w-full md:col-span-4 md:col-start-2 md:row-start-2">
 				{{ inlinepic('v1622143119','0035_ptsjae','Our dinner menu, pinned to a kitchen cabinet door.') }}
 			</div>
 		</div>
@@ -147,32 +147,35 @@ title: Jeremy and Hans
 				<h3 class="text-section-h3">Setting Up</h3>
 				<p class="text-section-p">We had an intimate-yet-socially-distanced reception setup in the backyard for our eight guests (plus our two nephews!).</p>
 			</div>
-			<div class="md:col-start-7 md:col-span-5 md:row-span-2">
+			<div class="md:col-start-7 md:col-span-5 ">
 				{{ inlinepic('v1622142570','0010_qd9eo1','Tighter shot of the grooms place settings.') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('v1622143524','0023_e8uuhg','Candlesticks and floral arrangements on table settings.') }}
+				{{ inlinepic('v1623000172','0023_e8uuhg','Candlesticks and floral arrangements on table settings.') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5 md:row-span-2">
 				{{ inlinepic('v1622143581','0015_cnixlz','Tight shot of menu on a place setting.') }}
 			</div>
-			<div class="flex flex-col md:col-start-2 md:col-span-4 md:row-start-5 md:row-span-2 lg:col-start-2 lg:col-span-3">
+			<div class="flex flex-col md:col-start-2 md:col-span-4 md:row-start-5 lg:col-start-2 lg:col-span-3">
 				<h3 class="text-section-h3">Actually getting ready&hellip;</h3>
 				<p class="text-section-p">Up until this moment, we honestly forgot that it was our own wedding! There’s nothing like photographers being present to remind you of that.</p>
 			</div>
-			<div class="md:col-start-7 md:col-span-4 md:row-span-2">
+			<div class="md:col-start-7 md:col-span-4 ">
 				{{ inlinepic('v1622143638','0045_tccufu','The grooms jackets hanging up in the dressing room.') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
 				{{ inlinepic('v1622142565','0062_urt4ex','Hans tying his necktie.') }}
 			</div>
-			<div class="md:col-start-7 md:col-span-5">
+			<div class="md:col-start-7 md:col-span-5 ">
 				{{ inlinepic('v1622143743','0097_ae26uo','Jeremy helps Hans straighten his pocket square.') }}
 			</div>
-			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
+			<div class="flex flex-col justify-center md:col-start-7 md:col-span-4 md:h-48">
+				<p class="text-xl text-section-p">Our furry nephew Frank checked our outfits, while our non-furry nephew George straightened our ties.</p>
+			</div>
+			<div class="md:col-start-2 md:col-span-4">
 				{{ inlinepic('v1622493756','0057_q4a0r2','Frank the dog!') }}
 			</div>
-			<div class="md:col-start-7 md:col-span-4 md:row-span-2">
+			<div class="md:col-start-7 md:col-span-4 ">
 				{{ inlinepic('v1622143836','0154_m4wqqc','Hans holding a baby.') }}
 			</div>
 		</div>
@@ -231,7 +234,7 @@ title: Jeremy and Hans
 				{{ inlinepic('v1622142588','0568_jw13zp','Cocktails!') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-5 md:row-span-2">
-				{{ inlinepic('v1622142582','0563_djciqw','Hans and Jeremy holding champange bottles.') }}
+				{{ inlinepic('v1622142582','0563_djciqw','Hans and Jeremy holding Lambrusco bottles.') }}
 			</div>
 			<div class="md:col-start-8 md:col-span-4 md:row-span-2">
 				{{ inlinepic('v1622142587','0579_duafh1','A baby.') }}
@@ -242,27 +245,33 @@ title: Jeremy and Hans
 			<div class="md:col-start-8 md:col-span-4">
 				{{ inlinepic('v1622166647','0581_ruqadl','Jeremy and Hans hold up their cocktail glasses for a toast.') }}
 			</div>
-			<div class="md:col-start-2 md:col-span-5 md:row-span-2 lg:col-span-6 lg:col-start-2">
+			<div class="flex flex-col space-y-10 md:col-start-2 md:col-span-5 md:row-span-2 lg:col-span-6 lg:col-start-2">
 				{{ inlinepic('v1622166692','0607_vnpref','A view from above of the reception with everyone seated.') }}
+				<div class="max-w-xs md:ml-12">
+					<p class="text-section-p">Special thanks to our photographers <a href="https://naturacollective.com/" target="_blank" class="underline">Natura Collective</a> for documenting our special day!</p>
+				</div>
 			</div>
 			<div class="flex flex-col md:col-start-8 md:col-span-4 lg:col-start-9 lg:col-span-3">
 				<h3 class="text-section-h3">The Reception</h3>
-				<p class="text-section-p">We lucked out with great fall weather for our backyard reception. Our menu was full of our fall favorites – braises, mac & cheese, and brussel sprouts – followed by Jeremy’s favorite white cake recipe with marshmallow buttercream. </p>
+				<p class="block text-section-p">We lucked out with great fall weather for our backyard reception. Our menu was full of our fall favorites – braises, mac & cheese, and brussel sprouts – followed by Jeremy’s favorite white cake recipe with marshmallow buttercream. </p>
 			</div>
 			<div class="md:col-start-9 md:col-span-3 lg:col-start-9 lg:col-span-3">
 				{{ inlinepic('v1622166761','1901','A full champange glass and open bottle sit on the table next to the dinner menu.') }}
 			</div>
-			<div class="md:col-start-2 md:col-span-3 md:place-self-start">
+			<div class="md:col-start-2 md:col-span-3 md:place-self-start md:-mt-12">
 				{{ inlinepic('v1622166878','6947_vmi08n','The cake.') }}
 			</div>
 			<div class="md:col-start-6 md:col-span-6 lg:col-start-6">
 				{{ inlinepic('v1622166934','0613_czzfbd','Jeremy and Hans seated at the reception.') }}
 			</div>
-			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('v1622167002','2115_pmmryf','The personal sized cake for our guests!') }}
-			</div>
-			<div class="flex flex-col md:col-start-7 md:col-span-4 lg:col-span-3 lg:col-start-7">
+			{# <div class="flex flex-col md:col-start-2 md:col-span-4 lg:col-span-3 lg:col-start-2">
 				<p class="text-xl text-section-p">We made a cake for ourselves, plus mini cakes for each of our guests.</p>
+			</div> #}
+			<div class="md:-mt-16 md:col-start-2 md:col-span-4">
+				<div class="max-w-xs px-3 mb-12">
+					<p class="px-3 text-xl text-section-p">We made a cake for ourselves, plus mini cakes for each of our guests.</p>
+				</div>
+				{{ inlinepic('v1622167002','2115_pmmryf','The personal sized cake for our guests!') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5 md:place-self-start">
 				{{ inlinepic('v1622167215','1301_uzyclu','Hans feeds Jeremy a bite of cake.') }}
