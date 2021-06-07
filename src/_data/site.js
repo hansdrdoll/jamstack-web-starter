@@ -1,6 +1,6 @@
 module.exports = {
 	title: "Jeremy & Hans",
-	description: "",
+	description: "Postponing our reception… for a great reason!",
 	url: "https://jeremyandhans.com",
 	// "author": "Chris Collins",
 	meta_data: {
