@@ -3,23 +3,23 @@ layout: base.njk
 title: Jeremy and Hans
 ---
 
-{% macro inlinepic(filename, alt) %}
+{% macro inlinepic(filename, alt, orientation) %}
 	<div class="imageGallery">
-		<a href="https://res.cloudinary.com/dsq8eoc9l/w_1024,f_auto,q_auto/wedding_v2/nocrop/{{ filename }}">
+		<a href="https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_1024,f_auto,q_auto/wedding_v2/nocrop/{{ filename }}">
 			<img
 				class="w-full shadow-sm"
 				sizes="(max-width: 641px) 90vw, 50vw"
-				srcset="https://res.cloudinary.com/dsq8eoc9l/w_160,f_auto,q_auto/wedding_v2/{{ filename }} 160w,
-					https://res.cloudinary.com/dsq8eoc9l/w_320,f_auto,q_auto/wedding_v2/{{ filename }} 320w,
-					https://res.cloudinary.com/dsq8eoc9l/w_384,f_auto,q_auto/wedding_v2/{{ filename }} 384w,
-					https://res.cloudinary.com/dsq8eoc9l/w_512,f_auto,q_auto/wedding_v2/{{ filename }} 512w,
-					https://res.cloudinary.com/dsq8eoc9l/w_640,f_auto,q_auto/wedding_v2/{{ filename }} 640w,
-					https://res.cloudinary.com/dsq8eoc9l/w_768,f_auto,q_auto/wedding_v2/{{ filename }} 768w,
-					https://res.cloudinary.com/dsq8eoc9l/w_1024,f_auto,q_auto/wedding_v2/{{ filename }} 1024w,
-					https://res.cloudinary.com/dsq8eoc9l/w_1280,f_auto,q_auto/wedding_v2/{{ filename }} 1280w,
-					https://res.cloudinary.com/dsq8eoc9l/w_1536,f_auto,q_auto/wedding_v2/{{ filename }} 1536w,
-					https://res.cloudinary.com/dsq8eoc9l/w_2000,f_auto,q_auto/wedding_v2/{{ filename }} 2000w"
-				src="https://res.cloudinary.com/dsq8eoc9l/w_512,f_auto,q_auto/wedding_v2/{{ filename }}"
+				srcset="https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_160,f_auto,q_auto/wedding_v2/{{ filename }} 160w,
+					https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_320,f_auto,q_auto/wedding_v2/{{ filename }} 320w,
+					https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_384,f_auto,q_auto/wedding_v2/{{ filename }} 384w,
+					https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_512,f_auto,q_auto/wedding_v2/{{ filename }} 512w,
+					https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_640,f_auto,q_auto/wedding_v2/{{ filename }} 640w,
+					https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_768,f_auto,q_auto/wedding_v2/{{ filename }} 768w,
+					https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_1024,f_auto,q_auto/wedding_v2/{{ filename }} 1024w,
+					https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_1280,f_auto,q_auto/wedding_v2/{{ filename }} 1280w,
+					https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_1536,f_auto,q_auto/wedding_v2/{{ filename }} 1536w,
+					https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_2000,f_auto,q_auto/wedding_v2/{{ filename }} 2000w"
+				src="https://res.cloudinary.com/dsq8eoc9l/{{ orientation }}_512,f_auto,q_auto/wedding_v2/{{ filename }}"
 				alt="{{ alt }}"
 				loading="lazy"
 			/>
@@ -113,10 +113,10 @@ title: Jeremy and Hans
 				<p class="text-section-p">Normally “getting ready” photos are of suits and ties. In our case, we planned and catered the wedding ourselves – of course with the help of Catherine, Claire, and Kris, aka The Brickyard). And in true Brickyard fashion, this story starts with flowers and our to do list in the kitchen.</p>
 			</div>
 			<div class="w-full md:col-span-5 md:col-start-7 md:row-span-2 place-self-start">
-				{{ inlinepic('7885','Claire and Jeremy preparing arrangements after a trip to the flower market.') }}
+				{{ inlinepic('7885','Claire and Jeremy preparing arrangements after a trip to the flower market.','h') }}
 			</div>
 			<div class="w-full md:col-span-4 md:col-start-2 md:row-start-2">
-				{{ inlinepic('0035','Our dinner menu, pinned to a kitchen cabinet door.') }}
+				{{ inlinepic('0035','Our dinner menu, pinned to a kitchen cabinet door.','w') }}
 			</div>
 		</div>
 		{# <div class="w-full section-std-div">
@@ -149,42 +149,42 @@ title: Jeremy and Hans
 	<section class="flex justify-center">
 		<div class="section-pics-div scroll-snap-y-top">
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('0012','Wide shot of table settings.') }}
+				{{ inlinepic('0012','Wide shot of table settings.','h') }}
 			</div>
 			<div class="flex flex-col md:col-start-7 md:col-span-4 xl:col-start-7 xl:col-span-3">
 				<h3 class="text-section-h3">Setting Up</h3>
 				<p class="text-section-p">We had an intimate-yet-socially-distanced reception setup in the backyard for our eight guests (plus our two nephews!).</p>
 			</div>
 			<div class="md:col-start-7 md:col-span-5 imageGallery">
-				{{ inlinepic('0010','Tighter shot of the grooms place settings.') }}
+				{{ inlinepic('0010','Tighter shot of the grooms place settings.','w') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('0023','Candlesticks and floral arrangements on table settings.') }}
+				{{ inlinepic('0023','Candlesticks and floral arrangements on table settings.','h') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5 md:row-span-2">
-				{{ inlinepic('0015','Tight shot of menu on a place setting.') }}
+				{{ inlinepic('0015','Tight shot of menu on a place setting.','w') }}
 			</div>
 			<div class="flex flex-col md:col-start-2 md:col-span-4 md:row-start-5 lg:col-start-2 lg:col-span-3">
 				<h3 class="text-section-h3">Actually getting ready&hellip;</h3>
 				<p class="text-section-p">Up until this moment, we honestly forgot that it was our own wedding! There’s nothing like photographers being present to remind you of that.</p>
 			</div>
 			<div class="md:col-start-7 md:col-span-4 ">
-				{{ inlinepic('0045','The grooms jackets hanging up in the dressing room.') }}
+				{{ inlinepic('0045','The grooms jackets hanging up in the dressing room.','w') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('0062','Hans tying his necktie.') }}
+				{{ inlinepic('0062','Hans tying his necktie.','h') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5 ">
-				{{ inlinepic('0097','Jeremy helps Hans straighten his pocket square.') }}
+				{{ inlinepic('0097','Jeremy helps Hans straighten his pocket square.','w') }}
 			</div>
 			<div class="flex flex-col justify-center md:col-start-7 md:col-span-4 md:h-48">
 				<p class="text-xl text-section-p">Our furry nephew Frank checked our outfits, while our non-furry nephew George straightened our ties.</p>
 			</div>
 			<div class="md:col-start-2 md:col-span-4">
-				{{ inlinepic('0057','Frank the dog!') }}
+				{{ inlinepic('0057','Frank the dog!','h') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-4 ">
-				{{ inlinepic('0154','Hans holding a baby.') }}
+				{{ inlinepic('0154','Hans holding a baby.','w') }}
 			</div>
 		</div>
 	</section>
@@ -213,50 +213,50 @@ title: Jeremy and Hans
 	<section class="flex justify-center">
 		<div class="section-pics-div scroll-snap-y-top">
 			<div class="md:col-start-2 md:col-span-5 md:row-span-2 lg:col-span-6 lg:col-start-2">
-				{{ inlinepic('0286','Hans and Jeremy hold hands.') }}
+				{{ inlinepic('0286','Hans and Jeremy hold hands.','w') }}
 			</div>
 			<div class="flex flex-col md:col-start-8 md:col-span-4 lg:col-start-9 lg:col-span-2">
 				<h3 class="text-section-h3">The&nbsp;Ceremony</h3>
 				<p class="text-section-p">Kris officiated our short rooftop ceremony. As you can see, our furry nephew Frank stood us up with how well Catherine dressed him.</p>
 			</div>
 			<div class="md:col-start-8 md:col-span-4 lg:col-start-9 lg:col-span-3">
-				{{ inlinepic('0299','Frank the dog, all dressed up!') }}
+				{{ inlinepic('0299','Frank the dog, all dressed up!','w') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4">
-				{{ inlinepic('0268','Hans and Jeremy on the rooftop with the city skyline in focus.') }}
+				{{ inlinepic('0268','Hans and Jeremy on the rooftop with the city skyline in focus.','w') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5 md:row-span-2">
-				{{ inlinepic('0380','Claire laughs with the grooms.') }}
+				{{ inlinepic('0380','Claire laughs with the grooms.','w') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('0440','Jeremy laughs while holding hands with Hans at the front.') }}
+				{{ inlinepic('0440','Jeremy laughs while holding hands with Hans at the front.','w') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5">
-				{{ inlinepic('0513','Jeremy and Hans right after saying I do.') }}
+				{{ inlinepic('0513','Jeremy and Hans right after saying I do.','w') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-4 md:row-span-2">
-				{{ inlinepic('0558','Catherine holding Frank.') }}
+				{{ inlinepic('0558','Catherine holding Frank.','h') }}
 			</div>
 			<div class="flex flex-col justify-end md:col-start-8 md:col-span-4 md:h-48">
 				<p class="text-xl text-section-p">As the sun set, we had Lambrusco Blood Orange cocktails for a quick toast before our reception.</p>
 			</div>
 			<div class="md:col-start-8 md:col-span-4 md:row-span-2">
-				{{ inlinepic('0568','Cocktails!') }}
+				{{ inlinepic('0568','Cocktails!','h') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-5 md:row-span-2">
-				{{ inlinepic('0563','Hans and Jeremy holding Lambrusco bottles.') }}
+				{{ inlinepic('0563','Hans and Jeremy holding Lambrusco bottles.','w') }}
 			</div>
 			<div class="md:col-start-8 md:col-span-4 md:row-span-2">
-				{{ inlinepic('0579','A baby.') }}
+				{{ inlinepic('0579','A baby.','w') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-5 md:row-span-2 md:place-self-start">
-				{{ inlinepic('0596','A view from above of the table settings.') }}
+				{{ inlinepic('0596','A view from above of the table settings.','h') }}
 			</div>
 			<div class="md:col-start-8 md:col-span-4">
-				{{ inlinepic('0581','Jeremy and Hans hold up their cocktail glasses for a toast.') }}
+				{{ inlinepic('0581','Jeremy and Hans hold up their cocktail glasses for a toast.','w') }}
 			</div>
 			<div class="flex flex-col space-y-10 md:col-start-2 md:col-span-5 md:row-span-2 lg:col-span-6 lg:col-start-2">
-				{{ inlinepic('0607','A view from above of the reception with everyone seated.') }}
+				{{ inlinepic('0607','A view from above of the reception with everyone seated.','w') }}
 				<div class="max-w-xs md:ml-12">
 					<p class="text-section-p">Special thanks to our photographers <a href="https://naturacollective.com/" target="_blank" class="underline">Natura Collective</a> for documenting our special day!</p>
 				</div>
@@ -266,13 +266,13 @@ title: Jeremy and Hans
 				<p class="block text-section-p">We lucked out with great fall weather for our backyard reception. Our menu was full of our fall favorites – braises, mac & cheese, and brussel sprouts – followed by Jeremy’s favorite white cake recipe with marshmallow buttercream. </p>
 			</div>
 			<div class="md:col-start-9 md:col-span-3 lg:col-start-9 lg:col-span-3">
-				{{ inlinepic('1901','A full champange glass and open bottle sit on the table next to the dinner menu.') }}
+				{{ inlinepic('1901','A full champange glass and open bottle sit on the table next to the dinner menu.','h') }}
 			</div>
 			<div class="md:col-start-2 md:col-span-3 md:place-self-start md:-mt-12">
-				{{ inlinepic('6947','The cake.') }}
+				{{ inlinepic('6947','The cake.','h') }}
 			</div>
 			<div class="md:col-start-6 md:col-span-6 lg:col-start-6">
-				{{ inlinepic('0613','Jeremy and Hans seated at the reception.') }}
+				{{ inlinepic('0613','Jeremy and Hans seated at the reception.','w') }}
 			</div>
 			{# <div class="flex flex-col md:col-start-2 md:col-span-4 lg:col-span-3 lg:col-start-2">
 				<p class="text-xl text-section-p">We made a cake for ourselves, plus mini cakes for each of our guests.</p>
@@ -281,10 +281,10 @@ title: Jeremy and Hans
 				<div class="max-w-xs px-3 mb-12">
 					<p class="px-3 text-xl text-section-p">We made a cake for ourselves, plus mini cakes for each of our guests.</p>
 				</div>
-				{{ inlinepic('2115','The personal sized cake for our guests!') }}
+				{{ inlinepic('2115','The personal sized cake for our guests!','h') }}
 			</div>
 			<div class="md:col-start-7 md:col-span-5 md:place-self-start">
-				{{ inlinepic('1301','Hans feeds Jeremy a bite of cake.') }}
+				{{ inlinepic('1301','Hans feeds Jeremy a bite of cake.','w') }}
 			</div>
 		</div>
 	</section>
